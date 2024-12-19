@@ -43,3 +43,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# No se sube a github incluido los de arriba
+/src/environments
