@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container mt-5" *ngIf="personaje; else loading">
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="card">
@@ -51,3 +51,12 @@
     </div>
   </div>
 </div>
+
+<ng-template #loading>
+  <div class="text-center">
+    <p>Cargando personaje...</p>
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+</ng-template>
