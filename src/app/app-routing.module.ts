@@ -11,6 +11,7 @@ const routes: Routes = [
         (m) => m.PersonajesModule
       ),
   },
+  { path: '**', redirectTo: 'PersonajesList' },
 ];
 
 @NgModule({
